@@ -1,2 +1,0 @@
-# GranD
-CheckOut GranD

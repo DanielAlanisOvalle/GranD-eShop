@@ -1,0 +1,59 @@
+﻿<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.rtl.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="~/css/Login.css" rel="stylesheet" />
+    <link href="~/fonts/Roboto.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body class="roboto-regular">
+    <form>
+        <div class="container">
+            <div class="card">
+                <div class="card-header">
+                    <img src="~/images/Logo_GranD.png" />
+                </div>
+                <div class="card-body">
+                    <div class="input-container">
+                        <input type="text" id="inpNombre" required>
+                        <label for="inpNombre" class="label">Nombre</label>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="inpApellido" required>
+                        <label for="inpApellido" class="label">Apellido</label>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="inpEmail" required>
+                        <label for="inpEmail" class="label" placeholder="Alguien@ejemplo.com">Email</label>
+                        <div class="underline"></div>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" id="inpPassword" required>
+                        <label for="inpPassword" class="label">Contraseña</label>
+                        <div class="underline"></div>
+                    </div>
+                    <p class="check">
+                        <input type="checkbox" />
+                        Enviarme correos electrónicos sobre novedades, artículos de temporada, promociones diarias y más.
+                    </p>
+                    <p class="aviso">Al crear una cuenta, reconoces haber leído y aceptado nuestros <a>Términos y condiciones</a> y <a>Aviso de privacidad</a>.</p>
+                    <div class="row justify-content-center">
+                        <button class="btn btn-outline-danger">Crear cuenta</button>
+                    </div>
+                    <p class="text-center">¿Ya tienes cuenta?</p>
+                    <div class="row justify-content-center">
+                        <button class="btn btn-outline-primary"  onclick="location.href='@Url.Action("Pago", "Home")'">Iniciar sesión</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
+
+<script src="~/js/login.js"></script>

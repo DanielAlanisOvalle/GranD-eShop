@@ -1,0 +1,271 @@
+﻿body {
+    text-align: center;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #EEF3F5;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 10px;
+    text-align: center;
+    margin: 15px 0 15px 0;
+    padding: 10px 10px 30px 10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-bottom: 5px;
+    box-shadow: 0 0 2px black;
+}
+
+#contenedorProductos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card .card-header > h3 {
+    margin: 12px 0px;
+}
+
+.product-price {
+    font-size: 25px;
+    font-weight: 700;
+    color: #E8001A;
+}
+
+.product-title {
+    font-size: 20px;
+}
+
+.product-description {
+    font-size: 15px;
+    margin: 0;
+}
+
+.product-desc {
+    padding-bottom: 20px;
+}
+
+.product-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+}
+
+#imgModal {
+    width: 100%;
+}
+
+#lblTitleProducto {
+    font-size: 26px;
+    font-weight: 800;
+    padding: 10px 20px 20px 20px;
+}
+
+#DivImg {
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    padding-right: 20px;
+}
+
+#divCantidad {
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+}
+
+.quantity-control {
+    display: flex;
+    align-items: center;
+    width: 161px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    margin-left: 5px;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+    .quantity-control input {
+        width: 100px;
+        padding: 0px;
+        border: none;
+        text-align: center;
+        font-size: 16px;
+    }
+
+    .quantity-control button {
+        width: 30px;
+        border: none;
+        border-radius: 0;
+        background-color: #E8001A;
+        color: #fff;
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+    }
+
+        .quantity-control button:hover {
+            background-color: #BD1326;
+        }
+
+#DivTallas {
+    display: flex;
+}
+
+.Tallas {
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#DivTallas button {
+    border: 1px black;
+    margin-left: 4px;
+    width: 19%;
+}
+
+#lblDescripcion {
+    margin-top: 10px;
+    text-align: justify;
+}
+
+#lblPrecio {
+    font-size: 40px;
+    font-weight: 800;
+    margin-bottom: 5px;
+    margin-top: -10px;
+}
+
+.rating {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+}
+
+    .rating > span {
+        display: inline-block;
+        position: relative;
+        width: 1.1em;
+    }
+
+span {
+    font-size: 21px;
+}
+
+#divrating {
+    text-align: center;
+    font-size: 19px;
+    padding-right: 0px;
+}
+
+p {
+    margin: 10px 0 10px 0;
+    padding: 0;
+}
+
+.precio {
+    text-align: center;
+    justify-content: center;
+    vertical-align: central;
+    align-content: center;
+    padding-left: 0;
+}
+
+#imgModalHeader {
+    width: 20%;
+    margin: 0;
+}
+
+.modal-header {
+    background-color: #E8001A;
+    justify-content: center;
+}
+
+.modal-body {
+    padding: 0 15px 5px 15px;
+}
+
+#carousel-container {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 10px black; 
+}
+
+
+#carousel {
+    width: 100%;
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.slide {
+    min-width: 100%;
+    overflow: hidden;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+.modal-footer {
+    padding: 0;
+}
+
+.btnsComprar {
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    width: auto;
+    flex-wrap: nowrap;
+}
+
+    .btnsComprar > button {
+        margin: 4px;
+    }
+
+#divrating > p {
+    margin: -5px;
+}
+
+#lblRating {
+    font-weight: 500;
+}
+
+#Productos {
+    margin-bottom: 10px;
+}
+
+#lblEntrega {
+    margin-top: 10px;
+    color: black;
+    font-weight:700;
+}
+
+.gratis {
+    color: green;
+}
+
+.SpanGratis {
+    color: green;
+    font-size:20px;
+    font-weight:700;
+    animation: cambiarColor 2s infinite alternate; 
+}
+
+@keyframes cambiarColor {
+    from {
+        color: forestgreen;
+    }
+
+    to {
+        color: black;
+    }
+}

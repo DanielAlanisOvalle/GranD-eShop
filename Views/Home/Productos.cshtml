@@ -8,6 +8,7 @@
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
     <link href="~/css/Poductos.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.min.css">
 </head>
 <body>
     <div id="carousel-container">
@@ -37,6 +38,8 @@
                 <img src="~/images/Banners/020424_lp_mymdc_2480_papa_2480_limon_78_molida_d.jpg" />
             </div>
         </div>
+        <button class="btnCarrusel" id="prevBtn">&#10094;</button>
+        <button class="btnCarrusel" id="nextBtn">&#10095;</button>
     </div>
     <section id="Productos">
         <div id="contenedorProductos">
@@ -122,15 +125,135 @@
                                 <button class="btn btn-warning" id="btnAgregarAlCarrito">Agregar al carrito <i class="bi bi-cart-fill"></i></button>
                                 <button class="btn btn-danger" id="btnComprar">Comprar ahora <i class="bi bi-check-lg"></i></button>
                             </div>
+                            <div class="position-fixed top-50 start-50 translate-middle" style="z-index: 1050;">
+                                <div class="toast bg-success text-white" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="2500" style="z-index: 1050;">
+                                    <div class="toast-body" id="toastBody">
+                                        Artículo agregado al carrito! <i class="bi bi-check-lg"></i>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Salir</button>
                 </div>
             </div>
         </div>
     </div>
+    <div class="modal fade scrollable-container" id="modalComprarAhora" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <img src="~/images/Logo_GranD.png" id="imgModalHeader" />
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <p class="pComprar">Vas a comprar: </p>
+                    </div>
+                    <div class="row">
+                        <div class="col-3">
+                            <img id="imgComprarAhora" />
+                        </div>
+                        <div class="col-9">
+                            <div class="row">
+                                <label id="lblTitleComprarAhora"></label>
+                            </div>
+                            <div class="row">
+                                <label id="lblDescripcionComprarAhora"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="accordion">
+                        <div class="card">
+                            <div class="card-header" id="headingPago">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapsePago" aria-expanded="true" aria-controls="collapsePago">
+                                        Método de Pago
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapsePago" class="collapse show" aria-labelledby="headingPago" data-parent="#accordion">
+                                <div class="card-body">
+                                    <label for="metodoPago">Selecciona el método de pago:</label>
+                                    <select class="form-control" id="metodoPago" onchange="mostrarCamposPago()">
+                                        <option value="" selected hidden>Seleccionar</option>
+                                        <option value="tarjeta">Tarjeta de crédito/debito</option>
+                                        <option value="paypal">PayPal</option>
+                                    </select>
+                                    <div id="camposTarjeta" style="display: none;">
+                                        <label for="numeroTarjeta">Número de Tarjeta:</label>
+                                        <input type="text" class="form-control" id="numeroTarjeta" placeholder="Ingrese el número de tarjeta">
+                                        <label for="FechaTarjeta">Fecha:</label>
+                                        <input type="text" class="form-control" id="FechaTarjeta" placeholder="Ingrese la fecha de vencimiento">
+                                        <label for="cvv">CVV:</label>
+                                        <input type="text" class="form-control" id="cvv" placeholder="Ingrese el CVV">
+                                    </div>
+
+                                    <div id="camposPaypal" style="display: none;">
+                                        <div class="form-group">
+                                            <label for="correoPaypal">Correo Electrónico de PayPal:</label>
+                                            <input type="email" class="form-control" id="correoPaypal" placeholder="Ingrese su correo electrónico de PayPal">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingDireccion">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseDireccion" aria-expanded="false" aria-controls="collapseDireccion">
+                                        Dirección
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseDireccion" class="collapse" aria-labelledby="headingDireccion" data-parent="#accordion">
+                                <div class="card-body">
+                                    <label for="inputDireccion">Dirección:</label>
+                                    <input type="text" class="form-control" id="inputDireccion" placeholder="Ingrese su dirección">
+                                    <label for="inputColonia">Colonia:</label>
+                                    <input type="text" class="form-control" id="inputColonia" placeholder="Ingrese su colonia">
+                                    <label for="inputCiudad">Ciudad:</label>
+                                    <input type="text" class="form-control" id="inputCiudad" placeholder="Ingrese su ciudad">
+                                    <label for="inputCodigoPostal">Código Postal:</label>
+                                    <input type="text" class="form-control" id="inputCodigoPostal" placeholder="Ingrese su código postal">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header">
+                                <h5 class="mb-0">
+                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseInformacion" aria-expanded="false" aria-controls="collapseInformacion">
+                                        Información
+                                    </button>
+                                </h5>
+                            </div>
+                            <div id="collapseInformacion" class="collapse" aria-labelledby="headingInformacion" data-parent="#accordion">
+                                <div class="card-body">
+                                    <h5>Dirección:</h5>
+                                    <p><strong>Dirección:</strong> <span id="resumenDireccion"></span></p>
+                                    <p><strong>Colonia:</strong> <span id="resumenColonia"></span></p>
+                                    <p><strong>Ciudad:</strong> <span id="resumenCiudad"></span></p>
+                                    <p><strong>Código Postal:</strong> <span id="resumenCodigoPostal"></span></p>
+                                    <hr>
+                                    <h5>Método de Pago:</h5>
+                                    <p><strong>Método de Pago:</strong> <span id="resumenMetodoPago"></span></p>
+                                    <p><strong>Número de Tarjeta:</strong> <span id="resumenNumeroTarjeta"></span></p>
+                                    <p><strong>Correo Electrónico de PayPal:</strong> <span id="resumenCorreoPaypal"></span></p>
+                                    <hr>
+                                    <h5>Total a Pagar:</h5>
+                                    <p><span id="totalAPagar"></span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer mt-auto justify-content-center botonesComprar">
+                    <button class="btn btn-success" id="btnConfirmarComprarAhora"> Confirmar compra <i class="bi bi-check-lg"></i></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js"></script>
     <script src="~/js/jquery-3.7.1.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
     <script src="~/js/producto.model.js"></script>

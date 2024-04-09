@@ -1,0 +1,142 @@
+C:\Users\lmar\Desktop\GranD-eShop-master\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\lmar\Desktop\GranD-eShop-master\bin\Debug\net5.0\appsettings.json
+C:\Users\lmar\Desktop\GranD-eShop-master\bin\Debug\net5.0\GranD eShop.exe
+C:\Users\lmar\Desktop\GranD-eShop-master\bin\Debug\net5.0\GranD eShop.deps.json
+C:\Users\lmar\Desktop\GranD-eShop-master\bin\Debug\net5.0\GranD eShop.runtimeconfig.json
+C:\Users\lmar\Desktop\GranD-eShop-master\bin\Debug\net5.0\GranD eShop.runtimeconfig.dev.json
+C:\Users\lmar\Desktop\GranD-eShop-master\bin\Debug\net5.0\GranD eShop.dll
+C:\Users\lmar\Desktop\GranD-eShop-master\bin\Debug\net5.0\ref\GranD eShop.dll
+C:\Users\lmar\Desktop\GranD-eShop-master\bin\Debug\net5.0\GranD eShop.pdb
+C:\Users\lmar\Desktop\GranD-eShop-master\bin\Debug\net5.0\GranD eShop.Views.dll
+C:\Users\lmar\Desktop\GranD-eShop-master\bin\Debug\net5.0\GranD eShop.Views.pdb
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.csproj.AssemblyReference.cache
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.AssemblyInfoInputs.cache
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.AssemblyInfo.cs
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.csproj.CoreCompileInputs.cache
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.RazorAssemblyInfo.cache
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.RazorAssemblyInfo.cs
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\staticwebassets\GranD eShop.StaticWebAssets.Manifest.cache
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\staticwebassets\GranD eShop.StaticWebAssets.xml
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\scopedcss\bundle\GranD eShop.styles.css
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.TagHelpers.input.cache
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.TagHelpers.output.cache
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.RazorCoreGenerate.cache
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.RazorTargetAssemblyInfo.cache
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.RazorTargetAssemblyInfo.cs
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.Views.pdb
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.dll
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\ref\GranD eShop.dll
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.pdb
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.genruntimeconfig.cache
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\GranD eShop.csproj.CopyComplete
+C:\Users\lmar\Desktop\GranD-eShop-master\obj\Debug\net5.0\Razor\Views\Home\Pago.cshtml.g.cs
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\bin\Debug\net5.0\appsettings.json
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.exe
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.deps.json
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.runtimeconfig.json
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.runtimeconfig.dev.json
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.dll
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\bin\Debug\net5.0\ref\GranD eShop.dll
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.pdb
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.Views.dll
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.Views.pdb
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.csproj.AssemblyReference.cache
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.AssemblyInfoInputs.cache
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.AssemblyInfo.cs
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.csproj.CoreCompileInputs.cache
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.RazorAssemblyInfo.cache
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.RazorAssemblyInfo.cs
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\staticwebassets\GranD eShop.StaticWebAssets.Manifest.cache
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\staticwebassets\GranD eShop.StaticWebAssets.xml
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\scopedcss\bundle\GranD eShop.styles.css
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.TagHelpers.input.cache
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.TagHelpers.output.cache
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.RazorCoreGenerate.cache
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\Razor\Views\Home\Pago.cshtml.g.cs
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.RazorTargetAssemblyInfo.cache
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.RazorTargetAssemblyInfo.cs
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.Views.pdb
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.dll
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\ref\GranD eShop.dll
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.pdb
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.genruntimeconfig.cache
+C:\Users\lmar\Documents\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.csproj.CopyComplete
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\bin\Debug\net5.0\appsettings.json
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.exe
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.deps.json
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.runtimeconfig.json
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.runtimeconfig.dev.json
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.dll
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\bin\Debug\net5.0\ref\GranD eShop.dll
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.pdb
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.Views.dll
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\bin\Debug\net5.0\GranD eShop.Views.pdb
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.csproj.AssemblyReference.cache
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.AssemblyInfoInputs.cache
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.AssemblyInfo.cs
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.csproj.CoreCompileInputs.cache
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.RazorAssemblyInfo.cache
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.RazorAssemblyInfo.cs
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\staticwebassets\GranD eShop.StaticWebAssets.Manifest.cache
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\staticwebassets\GranD eShop.StaticWebAssets.xml
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\scopedcss\bundle\GranD eShop.styles.css
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.TagHelpers.input.cache
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.TagHelpers.output.cache
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.RazorCoreGenerate.cache
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\Razor\Views\Home\Pago.cshtml.g.cs
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.RazorTargetAssemblyInfo.cache
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.RazorTargetAssemblyInfo.cs
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.Views.pdb
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.dll
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\ref\GranD eShop.dll
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.pdb
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.genruntimeconfig.cache
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\GranD eShop.csproj.CopyComplete
+C:\Users\lalanis\Desktop\GranD-eShop-Dev-Lore\obj\Debug\net5.0\Razor\Views\Home\Productos.cshtml.g.cs
+C:\Users\lalanis\GranD-eShop\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\lalanis\GranD-eShop\bin\Debug\net5.0\appsettings.json
+C:\Users\lalanis\GranD-eShop\bin\Debug\net5.0\GranD eShop.exe
+C:\Users\lalanis\GranD-eShop\bin\Debug\net5.0\GranD eShop.deps.json
+C:\Users\lalanis\GranD-eShop\bin\Debug\net5.0\GranD eShop.runtimeconfig.json
+C:\Users\lalanis\GranD-eShop\bin\Debug\net5.0\GranD eShop.runtimeconfig.dev.json
+C:\Users\lalanis\GranD-eShop\bin\Debug\net5.0\GranD eShop.dll
+C:\Users\lalanis\GranD-eShop\bin\Debug\net5.0\ref\GranD eShop.dll
+C:\Users\lalanis\GranD-eShop\bin\Debug\net5.0\GranD eShop.pdb
+C:\Users\lalanis\GranD-eShop\bin\Debug\net5.0\GranD eShop.Views.dll
+C:\Users\lalanis\GranD-eShop\bin\Debug\net5.0\GranD eShop.Views.pdb
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.csproj.AssemblyReference.cache
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.AssemblyInfoInputs.cache
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.AssemblyInfo.cs
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.csproj.CoreCompileInputs.cache
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.RazorAssemblyInfo.cache
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.RazorAssemblyInfo.cs
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\staticwebassets\GranD eShop.StaticWebAssets.Manifest.cache
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\staticwebassets\GranD eShop.StaticWebAssets.xml
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\scopedcss\bundle\GranD eShop.styles.css
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.TagHelpers.input.cache
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.TagHelpers.output.cache
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.RazorCoreGenerate.cache
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\Razor\Views\Home\Login.cshtml.g.cs
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\Razor\Views\Home\Pago.cshtml.g.cs
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\Razor\Views\Home\Productos.cshtml.g.cs
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.RazorTargetAssemblyInfo.cache
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.RazorTargetAssemblyInfo.cs
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.Views.pdb
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.dll
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\ref\GranD eShop.dll
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.pdb
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.genruntimeconfig.cache
+C:\Users\lalanis\GranD-eShop\obj\Debug\net5.0\GranD eShop.csproj.CopyComplete

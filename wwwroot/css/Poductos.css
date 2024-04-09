@@ -2,8 +2,11 @@
     text-align: center;
     align-content: center;
     align-items: center;
-    padding: 20px;
     background-color: #EEF3F5;
+}
+
+.contenedorProductos {
+    padding: 20px;
 }
 
 #contenedorProductos > .card {
@@ -239,8 +242,8 @@ p {
 #nextBtn {
     right: 0;
 }
-
-img {
+ 
+.contenedorProductos img {
     width: 100%;
     height: auto;
 }

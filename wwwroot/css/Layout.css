@@ -1,0 +1,100 @@
+﻿.rojo {
+    background-color: #E8001A;
+    color: white;
+    font-size: 30px;
+}
+
+body {
+    padding: -20px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.brandLogo {
+    width: 10%;
+}
+
+.navbar {
+    display: flex;
+    height:100px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+.navbar-nav .nav-item .btn {
+    background-color: #E8001A;
+    font-size: 18px;
+    color: white;
+    margin-right: 5px;
+}
+
+.btn i {
+    font-size: 15px;
+    color: white;
+}
+
+.navbar-nav .nav-item .btn i{
+    font-size: 15px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+/*
+.navbar{
+    height:100px;
+}*/
+
+.nav-item > .d-flex {
+    align-items: center;
+}
+
+.footer {
+    font-size: 14px;
+    background-color: #1f1f24;
+    padding: 12px 0;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .icon {
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 0;
+}
+
+.footer .social-links {
+    justify-content: center;
+}
+
+    .footer .social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-right: 10px;
+        transition: 0.3s;
+    }

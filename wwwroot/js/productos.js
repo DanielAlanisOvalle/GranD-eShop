@@ -31,7 +31,7 @@ function procesarData() {
     }
 }
 
-function crearElemento(element, index) {
+function crearElemento(element) {
     let nuevoElemento = document.createElement("div");
     nuevoElemento.className = "card pull-up product-card col-sm-6 col-md-2 position-relative";
     nuevoElemento.innerHTML = '<div class="product-img">' +

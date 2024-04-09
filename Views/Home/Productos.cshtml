@@ -1,4 +1,9 @@
-﻿<!DOCTYPE html>
+﻿
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -11,243 +16,245 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.min.css">
 </head>
 <body>
-    <div id="carousel-container">
-        <div id="carousel">
-            <div class="slide">
-                <img src="~/images/Banners/280324_lp_marcapropia_119_gelato_d.jpg" />
-            </div>
-            <div class="slide">
-                <img src="~/images/Banners/010424_catalogoextendido_71499_n250bajaj_44999_250znegro_98999_dominartebajaj_d.jpg" />
-            </div>
-            <div class="slide">
-                <img src="~/images/Banners/020424_home_2doal50_vinosylicores_d.jpg" />
-            </div>
-            <div class="slide">
-                <img src="~/images/Banners/020424_home_2dol50_medicinaetica_d.jpg" />
-            </div>
-            <div class="slide">
-                <img src="~/images/Banners/020424_home_olaofertas_2doal50_ariel_2doal50_suavitel_2doal50_fabuloso_d.jpg" />
-            </div>
-            <div class="slide">
-                <img src="~/images/Banners/020424_home_olaofertas_2doal50_suavel_2doal50_elite_2al50_cottonelle_d.jpg" />
-            </div>
-            <div class="slide">
-                <img src="~/images/Banners/020424_lp_mundotechno_6990_pantalla_hisense55_7490_pantalla_samsung_d.jpg" />
-            </div>
-            <div class="slide">
-                <img src="~/images/Banners/020424_lp_mymdc_2480_papa_2480_limon_78_molida_d.jpg" />
-            </div>
-        </div>
-        <button class="btnCarrusel" id="prevBtn">&#10094;</button>
-        <button class="btnCarrusel" id="nextBtn">&#10095;</button>
-    </div>
-    <section id="Productos">
-        <div id="contenedorProductos">
-        </div>
-    </section>
-    <div class="row containerPublicidad">
-        <div class="col-md-4 col-sm-12">
-            <div class="row">
-                <img src="~/images/Publicidad/81261a7b-5685-4473-8fa3-33be35ede9d7___5a76d67a5664eea67df05be9636f9b4a.webp" />
-            </div>
-            <br />
-            <div class="row">
-                <img src="~/images/Publicidad/b5a21b2f-7a49-4430-8846-a5af0f499fcf___cad2ad9dfc7afd3cc08108fc466d4902.webp" />
-            </div>
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <img src="~/images/Publicidad/5080742d-4408-4b1c-adab-28dea76a3d98___13927aaff33c55b4f831da62bcfa5e2b.webp" />
-        </div>
-        <div class="col-md-4 col-sm-12">
-            <div class="row">
-                <img src="~/images/Publicidad/0d72529f-73ef-41fb-adff-304447e41736___5fdf1cfbce41eadaad07449f081f3bca.webp" />
-            </div>
-            <br />
-            <div class="row">
-                <img src="~/images/Publicidad/3009c506-c8b4-4eb0-8efe-0a52ddf833a5___8611e1a86fd7a61d0cd17728e41390ac.webp" />
-            </div>
-        </div>
-    </div>
-    <div class="modal fade scrollable-container" id="modalProductos" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <img src="~/images/Logo_GranD.png" id="imgModalHeader" />
+    <div class="contenedorProductos">
+        <div id="carousel-container">
+            <div id="carousel">
+                <div class="slide">
+                    <img src="~/images/Banners/280324_lp_marcapropia_119_gelato_d.jpg" />
                 </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <div class="col-5" id="DivImg">
-                            <img id="imgModal" />
-                        </div>
-                        <div class="col-7" id="">
-                            <p>
-                                <label id="lblTitleProducto"></label>
-                            </p>
-                            <div class="row">
-                                <div class="col-5" id="divrating">
-                                    <p>Rating</p>
-                                    <p><label id="lblRating"></label></p>
-                                    <div id="divrating">
-                                        <div class="rating">
-                                            <span>&#9733;</span>
-                                            <span>&#9733;</span>
-                                            <span>&#9733;</span>
-                                            <span>&#9733;</span>
-                                            <span>&#9733;</span>
+                <div class="slide">
+                    <img src="~/images/Banners/010424_catalogoextendido_71499_n250bajaj_44999_250znegro_98999_dominartebajaj_d.jpg" />
+                </div>
+                <div class="slide">
+                    <img src="~/images/Banners/020424_home_2doal50_vinosylicores_d.jpg" />
+                </div>
+                <div class="slide">
+                    <img src="~/images/Banners/020424_home_2dol50_medicinaetica_d.jpg" />
+                </div>
+                <div class="slide">
+                    <img src="~/images/Banners/020424_home_olaofertas_2doal50_ariel_2doal50_suavitel_2doal50_fabuloso_d.jpg" />
+                </div>
+                <div class="slide">
+                    <img src="~/images/Banners/020424_home_olaofertas_2doal50_suavel_2doal50_elite_2al50_cottonelle_d.jpg" />
+                </div>
+                <div class="slide">
+                    <img src="~/images/Banners/020424_lp_mundotechno_6990_pantalla_hisense55_7490_pantalla_samsung_d.jpg" />
+                </div>
+                <div class="slide">
+                    <img src="~/images/Banners/020424_lp_mymdc_2480_papa_2480_limon_78_molida_d.jpg" />
+                </div>
+            </div>
+            <button class="btnCarrusel" id="prevBtn">&#10094;</button>
+            <button class="btnCarrusel" id="nextBtn">&#10095;</button>
+        </div>
+        <section id="Productos">
+            <div id="contenedorProductos">
+            </div>
+        </section>
+        <div class="row containerPublicidad">
+            <div class="col-md-4 col-sm-12">
+                <div class="row">
+                    <img src="~/images/Publicidad/81261a7b-5685-4473-8fa3-33be35ede9d7___5a76d67a5664eea67df05be9636f9b4a.webp" />
+                </div>
+                <br />
+                <div class="row">
+                    <img src="~/images/Publicidad/b5a21b2f-7a49-4430-8846-a5af0f499fcf___cad2ad9dfc7afd3cc08108fc466d4902.webp" />
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <img src="~/images/Publicidad/5080742d-4408-4b1c-adab-28dea76a3d98___13927aaff33c55b4f831da62bcfa5e2b.webp" />
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="row">
+                    <img src="~/images/Publicidad/0d72529f-73ef-41fb-adff-304447e41736___5fdf1cfbce41eadaad07449f081f3bca.webp" />
+                </div>
+                <br />
+                <div class="row">
+                    <img src="~/images/Publicidad/3009c506-c8b4-4eb0-8efe-0a52ddf833a5___8611e1a86fd7a61d0cd17728e41390ac.webp" />
+                </div>
+            </div>
+        </div>
+        <div class="modal fade scrollable-container" id="modalProductos" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="~/images/Logo_GranD.png" id="imgModalHeader" />
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-5" id="DivImg">
+                                <img id="imgModal" />
+                            </div>
+                            <div class="col-7" id="">
+                                <p>
+                                    <label id="lblTitleProducto"></label>
+                                </p>
+                                <div class="row">
+                                    <div class="col-5" id="divrating">
+                                        <p>Rating</p>
+                                        <p><label id="lblRating"></label></p>
+                                        <div id="divrating">
+                                            <div class="rating">
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                                <span>&#9733;</span>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="col-7 precio">
-                                    <label id="lblPrecio"></label>
-                                </div>
-                            </div>
-                            <label id="lblDescripcion"></label>
-                            <p>Talla</p>
-                            <div class="row" id="DivTallas">
-                                <button class="btn btn-light form-control" name="btnTalla" value="XS">XS</button>
-                                <button class="btn btn-light form-control" name="btnTalla" value="S">S</button>
-                                <button class="btn btn-light form-control" name="btnTalla" value="M">M</button>
-                                <button class="btn btn-light form-control" name="btnTalla" value="L">L</button>
-                                <button class="btn btn-light form-control" name="btnTalla" value="XL">XL</button>
-                            </div>
-                            <p>Cantidad</p>
-                            <div class="row" id="divCantidad">
-                                <div class="quantity-control">
-                                    <button class="btn" id="decreaseBtn">-</button>
-                                    <input class="form-control" type="text" id="quantityInput" onkeypress="return event.charCode >= 48 && event.charCode <= 57" value="1">
-                                    <button class="btn" id="increaseBtn">+</button>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <label id="lblEntrega"></label>
-                            </div>
-                            <div class="btnsComprar">
-                                <button class="btn btn-warning" id="btnAgregarAlCarrito">Agregar al carrito <i class="bi bi-cart-fill"></i></button>
-                                <button class="btn btn-danger" id="btnComprar">Comprar ahora <i class="bi bi-check-lg"></i></button>
-                            </div>
-                            <div class="position-fixed top-50 start-50 translate-middle" style="z-index: 1050;">
-                                <div class="toast bg-success text-white" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="2500" style="z-index: 1050;">
-                                    <div class="toast-body" id="toastBody">
-                                        Artículo agregado al carrito! <i class="bi bi-check-lg"></i>
+                                    <div class="col-7 precio">
+                                        <label id="lblPrecio"></label>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="modal fade scrollable-container" id="modalComprarAhora" role="dialog">
-        <div class="modal-dialog modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <img src="~/images/Logo_GranD.png" id="imgModalHeader" />
-                </div>
-                <div class="modal-body">
-                    <div class="row">
-                        <p class="pComprar">Vas a comprar: </p>
-                    </div>
-                    <div class="row">
-                        <div class="col-3">
-                            <img id="imgComprarAhora" />
-                        </div>
-                        <div class="col-9">
-                            <div class="row">
-                                <label id="lblTitleComprarAhora"></label>
-                            </div>
-                            <div class="row">
-                                <label id="lblDescripcionComprarAhora"></label>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="accordion">
-                        <div class="card">
-                            <div class="card-header" id="headingPago">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link" data-toggle="collapse" data-target="#collapsePago" aria-expanded="true" aria-controls="collapsePago">
-                                        Método de Pago
-                                    </button>
-                                </h5>
-                            </div>
-                            <div id="collapsePago" class="collapse show" aria-labelledby="headingPago" data-parent="#accordion">
-                                <div class="card-body">
-                                    <label for="metodoPago">Selecciona el método de pago:</label>
-                                    <select class="form-control" id="metodoPago" onchange="mostrarCamposPago()">
-                                        <option value="" selected hidden>Seleccionar</option>
-                                        <option value="tarjeta">Tarjeta de crédito/debito</option>
-                                        <option value="paypal">PayPal</option>
-                                    </select>
-                                    <div id="camposTarjeta" style="display: none;">
-                                        <label for="numeroTarjeta">Número de Tarjeta:</label>
-                                        <input type="text" class="form-control" id="numeroTarjeta" placeholder="Ingrese el número de tarjeta">
-                                        <label for="FechaTarjeta">Fecha:</label>
-                                        <input type="text" class="form-control" id="FechaTarjeta" placeholder="Ingrese la fecha de vencimiento">
-                                        <label for="cvv">CVV:</label>
-                                        <input type="text" class="form-control" id="cvv" placeholder="Ingrese el CVV">
+                                <label id="lblDescripcion"></label>
+                                <p>Talla</p>
+                                <div class="row" id="DivTallas">
+                                    <button class="btn btn-light form-control" name="btnTalla" value="XS">XS</button>
+                                    <button class="btn btn-light form-control" name="btnTalla" value="S">S</button>
+                                    <button class="btn btn-light form-control" name="btnTalla" value="M">M</button>
+                                    <button class="btn btn-light form-control" name="btnTalla" value="L">L</button>
+                                    <button class="btn btn-light form-control" name="btnTalla" value="XL">XL</button>
+                                </div>
+                                <p>Cantidad</p>
+                                <div class="row" id="divCantidad">
+                                    <div class="quantity-control">
+                                        <button class="btn" id="decreaseBtn">-</button>
+                                        <input class="form-control" type="text" id="quantityInput" onkeypress="return event.charCode >= 48 && event.charCode <= 57" value="1">
+                                        <button class="btn" id="increaseBtn">+</button>
                                     </div>
-
-                                    <div id="camposPaypal" style="display: none;">
-                                        <div class="form-group">
-                                            <label for="correoPaypal">Correo Electrónico de PayPal:</label>
-                                            <input type="email" class="form-control" id="correoPaypal" placeholder="Ingrese su correo electrónico de PayPal">
+                                </div>
+                                <div class="row">
+                                    <label id="lblEntrega"></label>
+                                </div>
+                                <div class="btnsComprar">
+                                    <button class="btn btn-warning" id="btnAgregarAlCarrito">Agregar al carrito <i class="bi bi-cart-fill"></i></button>
+                                    <button class="btn btn-danger" id="btnComprar">Comprar ahora <i class="bi bi-check-lg"></i></button>
+                                </div>
+                                <div class="position-fixed top-50 start-50 translate-middle" style="z-index: 1050;">
+                                    <div class="toast bg-success text-white" role="alert" aria-live="assertive" aria-atomic="true" data-bs-delay="2500" style="z-index: 1050;">
+                                        <div class="toast-body" id="toastBody">
+                                            Artículo agregado al carrito! <i class="bi bi-check-lg"></i>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card">
-                            <div class="card-header" id="headingDireccion">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseDireccion" aria-expanded="false" aria-controls="collapseDireccion">
-                                        Dirección
-                                    </button>
-                                </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade scrollable-container" id="modalComprarAhora" role="dialog">
+            <div class="modal-dialog modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <img src="~/images/Logo_GranD.png" id="imgModalHeader" />
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <p class="pComprar">Vas a comprar: </p>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <img id="imgComprarAhora" />
                             </div>
-                            <div id="collapseDireccion" class="collapse" aria-labelledby="headingDireccion" data-parent="#accordion">
-                                <div class="card-body">
-                                    <label for="inputDireccion">Dirección:</label>
-                                    <input type="text" class="form-control" id="inputDireccion" placeholder="Ingrese su dirección">
-                                    <label for="inputColonia">Colonia:</label>
-                                    <input type="text" class="form-control" id="inputColonia" placeholder="Ingrese su colonia">
-                                    <label for="inputCiudad">Ciudad:</label>
-                                    <input type="text" class="form-control" id="inputCiudad" placeholder="Ingrese su ciudad">
-                                    <label for="inputCodigoPostal">Código Postal:</label>
-                                    <input type="text" class="form-control" id="inputCodigoPostal" placeholder="Ingrese su código postal">
+                            <div class="col-9">
+                                <div class="row">
+                                    <label id="lblTitleComprarAhora"></label>
+                                </div>
+                                <div class="row">
+                                    <label id="lblDescripcionComprarAhora"></label>
                                 </div>
                             </div>
                         </div>
+                        <div id="accordion">
+                            <div class="card">
+                                <div class="card-header" id="headingPago">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link" data-toggle="collapse" data-target="#collapsePago" aria-expanded="true" aria-controls="collapsePago">
+                                            Método de Pago
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapsePago" class="collapse show" aria-labelledby="headingPago" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <label for="metodoPago">Selecciona el método de pago:</label>
+                                        <select class="form-control" id="metodoPago" onchange="mostrarCamposPago()">
+                                            <option value="" selected hidden>Seleccionar</option>
+                                            <option value="tarjeta">Tarjeta de crédito/debito</option>
+                                            <option value="paypal">PayPal</option>
+                                        </select>
+                                        <div id="camposTarjeta" style="display: none;">
+                                            <label for="numeroTarjeta">Número de Tarjeta:</label>
+                                            <input type="text" class="form-control" id="numeroTarjeta" placeholder="Ingrese el número de tarjeta">
+                                            <label for="FechaTarjeta">Fecha:</label>
+                                            <input type="text" class="form-control" id="FechaTarjeta" placeholder="Ingrese la fecha de vencimiento">
+                                            <label for="cvv">CVV:</label>
+                                            <input type="text" class="form-control" id="cvv" placeholder="Ingrese el CVV">
+                                        </div>
 
-                        <div class="card">
-                            <div class="card-header">
-                                <h5 class="mb-0">
-                                    <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseInformacion" aria-expanded="false" aria-controls="collapseInformacion">
-                                        Información
-                                    </button>
-                                </h5>
+                                        <div id="camposPaypal" style="display: none;">
+                                            <div class="form-group">
+                                                <label for="correoPaypal">Correo Electrónico de PayPal:</label>
+                                                <input type="email" class="form-control" id="correoPaypal" placeholder="Ingrese su correo electrónico de PayPal">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="collapseInformacion" class="collapse" aria-labelledby="headingInformacion" data-parent="#accordion">
-                                <div class="card-body">
-                                    <h5>Dirección:</h5>
-                                    <p><strong>Dirección:</strong> <span id="resumenDireccion"></span></p>
-                                    <p><strong>Colonia:</strong> <span id="resumenColonia"></span></p>
-                                    <p><strong>Ciudad:</strong> <span id="resumenCiudad"></span></p>
-                                    <p><strong>Código Postal:</strong> <span id="resumenCodigoPostal"></span></p>
-                                    <hr>
-                                    <h5>Método de Pago:</h5>
-                                    <p><strong>Método de Pago:</strong> <span id="resumenMetodoPago"></span></p>
-                                    <p><strong>Número de Tarjeta:</strong> <span id="resumenNumeroTarjeta"></span></p>
-                                    <p><strong>Correo Electrónico de PayPal:</strong> <span id="resumenCorreoPaypal"></span></p>
-                                    <hr>
-                                    <h5>Total a Pagar:</h5>
-                                    <p><span id="totalAPagar"></span></p>
+                            <div class="card">
+                                <div class="card-header" id="headingDireccion">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseDireccion" aria-expanded="false" aria-controls="collapseDireccion">
+                                            Dirección
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseDireccion" class="collapse" aria-labelledby="headingDireccion" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <label for="inputDireccion">Dirección:</label>
+                                        <input type="text" class="form-control" id="inputDireccion" placeholder="Ingrese su dirección">
+                                        <label for="inputColonia">Colonia:</label>
+                                        <input type="text" class="form-control" id="inputColonia" placeholder="Ingrese su colonia">
+                                        <label for="inputCiudad">Ciudad:</label>
+                                        <input type="text" class="form-control" id="inputCiudad" placeholder="Ingrese su ciudad">
+                                        <label for="inputCodigoPostal">Código Postal:</label>
+                                        <input type="text" class="form-control" id="inputCodigoPostal" placeholder="Ingrese su código postal">
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="card">
+                                <div class="card-header">
+                                    <h5 class="mb-0">
+                                        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseInformacion" aria-expanded="false" aria-controls="collapseInformacion">
+                                            Información
+                                        </button>
+                                    </h5>
+                                </div>
+                                <div id="collapseInformacion" class="collapse" aria-labelledby="headingInformacion" data-parent="#accordion">
+                                    <div class="card-body">
+                                        <h5>Dirección:</h5>
+                                        <p><strong>Dirección:</strong> <span id="resumenDireccion"></span></p>
+                                        <p><strong>Colonia:</strong> <span id="resumenColonia"></span></p>
+                                        <p><strong>Ciudad:</strong> <span id="resumenCiudad"></span></p>
+                                        <p><strong>Código Postal:</strong> <span id="resumenCodigoPostal"></span></p>
+                                        <hr>
+                                        <h5>Método de Pago:</h5>
+                                        <p><strong>Método de Pago:</strong> <span id="resumenMetodoPago"></span></p>
+                                        <p><strong>Número de Tarjeta:</strong> <span id="resumenNumeroTarjeta"></span></p>
+                                        <p><strong>Correo Electrónico de PayPal:</strong> <span id="resumenCorreoPaypal"></span></p>
+                                        <hr>
+                                        <h5>Total a Pagar:</h5>
+                                        <p><span id="totalAPagar"></span></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="modal-footer mt-auto justify-content-center botonesComprar">
-                    <button class="btn btn-success" id="btnConfirmarComprarAhora"> Confirmar compra <i class="bi bi-check-lg"></i></button>
+                    <div class="modal-footer mt-auto justify-content-center botonesComprar">
+                        <button class="btn btn-success" id="btnConfirmarComprarAhora"> Confirmar compra <i class="bi bi-check-lg"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -259,5 +266,6 @@
     <script src="~/js/producto.model.js"></script>
     <script src="~/js/productos.js"></script>
     <script src="~/js/ProductosInicio.js"></script>
+    <script src="~/js/Login.js"></script>
 </body>
 </html>

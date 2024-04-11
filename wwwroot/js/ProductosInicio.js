@@ -1,11 +1,11 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
-
+//    localStorage.removeItem('carrito');
 });
 
 const modalProductos = $('#modalProductos');
-const decreaseBtn = document.getElementById('decreaseBtn');
-const increaseBtn = document.getElementById('increaseBtn');
-const quantityInput = document.getElementById('quantityInput');
+const decreaseBtn = $('#decreaseBtn')[0];
+const increaseBtn = $('#increaseBtn')[0];
+const quantityInput = $('#quantityInput');
 let lblEntrega = $('#lblEntrega');
 const btnAgregarAlCarrito = $('#btnAgregarAlCarrito');
 let arrayCarrito = [];
@@ -46,7 +46,8 @@ let ProductoActual = {
     Imagen: '',
     Rating: '',
     Cantidad: 0,
-    Talla: ''
+    Talla: '',
+    ID: 0
 }
 let Talla;
 let Articulo;
@@ -156,6 +157,7 @@ function limpiarInputs() {
     numeroTarjeta.val("");
     correoPaypal.val("");
     FechaTarjeta.val("");
+    quantityInput.val('1');
     cvv.val("");
     resumenDireccion.text("");
     resumenColonia.text("");
@@ -170,29 +172,30 @@ function limpiarInputs() {
 btnAgregarAlCarrito.click(function (e) {
     ProductoActual = {};
 
+    ProductoActual.ID = Articulo.id;
     ProductoActual.Nombre = Articulo.title;
     ProductoActual.Descripcion = Articulo.description;
     ProductoActual.Precio = Articulo.price;
     ProductoActual.Imagen = Articulo.image;
     ProductoActual.Rating = Articulo.rating;
-    ProductoActual.Cantidad = quantityInput.value;
+    ProductoActual.Cantidad = quantityInput.val();
     ProductoActual.Talla = Talla;
 
     arrayCarrito.push(ProductoActual);
-
     const toast = new bootstrap.Toast(toastEl);
     toast.show();
+    localStorage.setItem('carrito', JSON.stringify(arrayCarrito));   
 });
 
 // ******************* CANTIDAD ***********************
 decreaseBtn.addEventListener("click", function () {
-    if (quantityInput.value > 1) {
-        quantityInput.value--;
+    if (quantityInput.val() > 1) {
+        quantityInput.val(parseInt(quantityInput.val()) - 1);
     }
 });
 
 increaseBtn.addEventListener("click", function () {
-    quantityInput.value++;
+    quantityInput.val(parseInt(quantityInput.val()) + 1);
 });
 
 function setRating(cantidad) {
@@ -306,7 +309,7 @@ function mostrarNotificacionPersonalizada() {
             '<div class="imagenToast"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="48" height="48"><g stroke="#34D399" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"><path d="M20 7L9.00004 18L3.99994 13"></path></g></svg></div>' +
             '<div class="contenidoToast">' +
             '<p class="tituloToast">Orden realizada correctamente</p>' +
-            '<p>Puedes recoger el paquete hoy o será entregado mañana.</p>' +
+            '<p>Puedes recoger el pedido hoy antes de las 7 pm o será entregado mañana.</p>' +
             '<button class="btn btnPedidos" id="VerMisPedidos">Ver mis pedidos</button>' +
             '<button class="btn btnTracker" id="trackearEnvioBtn">Trackear mi envío</button>' +
             '</div>'

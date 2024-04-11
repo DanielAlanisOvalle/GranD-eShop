@@ -2,11 +2,10 @@
     text-align: center;
     align-content: center;
     align-items: center;
-    background-color: #EEF3F5;
 }
 
 .contenedorProductos {
-    padding: 20px;
+    padding: 10px;
 }
 
 #contenedorProductos > .card {
@@ -79,7 +78,7 @@
 }
 
 #lblTitleProducto {
-    font-size: 26px;
+    font-size: 22px;
     font-weight: 800;
     padding: 10px 20px 20px 20px;
 }
@@ -151,12 +150,13 @@
 }
 
 #lblDescripcion {
+    font-size:15px;
     margin-top: 10px;
     text-align: justify;
 }
 
 #lblPrecio {
-    font-size: 40px;
+    font-size: 34px;
     font-weight: 800;
     margin-bottom: 5px;
     margin-top: -10px;
@@ -347,7 +347,7 @@ img:hover {
 }
 
 #accordion {
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .ToastConfirmacion {

@@ -22,7 +22,7 @@ namespace GranD_eShop.Controllers
         {
             return View();
         }
-        public IActionResult Pago()
+        public IActionResult Carrito()
         {
             return View();
         }

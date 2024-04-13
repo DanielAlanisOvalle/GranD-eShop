@@ -28,7 +28,7 @@ body {
 
 .navbar-nav .nav-item .btn {
     background-color: #E8001A;
-    font-size: 19px;
+    font-size: 17px;
     color: white;
     margin-right: 5px;
 }
@@ -55,7 +55,8 @@ body {
 }
 
 .brandLogo {
-    width: 10%;
+    margin:10px;
+    width: 13%;
 }
 
 .navbar {

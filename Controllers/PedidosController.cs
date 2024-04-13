@@ -7,35 +7,16 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Dapper;
 
 namespace GranD_eShop.Controllers
 {
-    public class HomeController : Controller
+    public class PedidosController : Controller
     {
-        private readonly ILogger<HomeController> _logger;
+        private readonly ILogger<PedidosController> _logger;
 
-        public HomeController(ILogger<HomeController> logger)
+        public PedidosController(ILogger<PedidosController> logger)
         {
             _logger = logger;
-        }
-
-        public IActionResult Login()
-        {
-            return View();
-        }
-        public IActionResult Carrito()
-        {
-            return View();
-        }
-
-        public IActionResult Productos()
-        {
-            return View();
-        }
-        public IActionResult Ubicacion()
-        {
-            return View();
         }
         public IActionResult Pedidos()
         {
@@ -45,8 +26,12 @@ namespace GranD_eShop.Controllers
         {
             return View();
         }
+        [HttpPost]
+        public void ObtieneNumeroPedido([FromBody] PedidosModels.Pedidos pedidos)
+        {
+            string resultado = pedidos.NumeroPedido;
+        }
 
-        
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

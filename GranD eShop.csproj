@@ -5,4 +5,8 @@
     <RootNamespace>GranD_eShop</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.1.44" />
+  </ItemGroup>
+
 </Project>

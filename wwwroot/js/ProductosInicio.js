@@ -1,5 +1,5 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
-//    localStorage.removeItem('carrito');
+    //    localStorage.removeItem('carrito');
 });
 
 const modalProductos = $('#modalProductos');
@@ -184,7 +184,7 @@ btnAgregarAlCarrito.click(function (e) {
     arrayCarrito.push(ProductoActual);
     const toast = new bootstrap.Toast(toastEl);
     toast.show();
-    localStorage.setItem('carrito', JSON.stringify(arrayCarrito));   
+    localStorage.setItem('carrito', JSON.stringify(arrayCarrito));
 });
 
 // ******************* CANTIDAD ***********************
@@ -305,17 +305,16 @@ function mostrarNotificacionPersonalizada() {
 
     Toast.fire({
         html:
-            '<div class="DivBtnCerrarToast"><button class="dismiss btn">x</button></div>'+
+            '<div class="DivBtnCerrarToast"><button class="dismiss btn">x</button></div>' +
             '<div class="imagenToast"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="48" height="48"><g stroke="#34D399" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"><path d="M20 7L9.00004 18L3.99994 13"></path></g></svg></div>' +
             '<div class="contenidoToast">' +
             '<p class="tituloToast">Orden realizada correctamente</p>' +
             '<p>Puedes recoger el pedido hoy antes de las 7 pm o será entregado mañana.</p>' +
-            '<button class="btn btnPedidos" id="VerMisPedidos">Ver mis pedidos</button>' +
+            '<a href="./Pedidos" class="btn btnPedidos" id="VerMisPedidos">Ver mis pedidos</a>' +
             '<button class="btn btnTracker" id="trackearEnvioBtn">Trackear mi envío</button>' +
             '</div>'
     });
-
-    document.getElementById('trackearEnvioBtn').addEventListener('click', function () {
-        console.log('Trackear envío');
+    document.getElementById('VerMisPedidos').addEventListener('click', function () {
+        console.log(localStorage);
     });
 }

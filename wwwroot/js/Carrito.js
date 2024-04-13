@@ -8,14 +8,29 @@
     var CostoEnvio = $('#CostoEnvio');
     var Envío = 0;
     const btnRealizarPedido = $('#btnRealizarPedido');
+    var arrayPedidos = [];
 
     btnRealizarPedido.click(function () {
+        var Pedidos = {};
+
+        momentoActual = new Date();
+        day = momentoActual.getDay();
+        month = momentoActual.getMonth();
+        year = momentoActual.getFullYear();
+        hora = momentoActual.getHours();
+        minuto = momentoActual.getMinutes();
+        segundo = momentoActual.getSeconds();
+        Pedidos.NumeroPedido = year + "" + month + "" + day + "" + hora + "" + minuto + "" + segundo;
+        arrayPedidos.push(Pedidos);
+
+        localStorage.setItem('numeropedido', JSON.stringify(arrayPedidos));
+
         mostrarNotificacionPersonalizada();
         arrayCarrito = [];
         subTotal = 0;
         Envío = 0;
         Total = 0;
-        localStorage.removeItem('carrito');
+        //localStorage.removeItem('carrito');
         actualizarCarrito();
     });
 
@@ -32,7 +47,7 @@
             <div class="card">
                 <div class="row">
                     <div class="col-4 d-flex justify-content-center align-items-center CardImgCarrito">
-                        <img src="${producto.Imagen}" alt="${producto.Nombre}" style="width: 60%;">
+                        <img src="${producto.Imagen}" alt="${producto.Nombre}" style="width: 30%;">
                     </div>
                     <div class="col-6 cardBodyCarrito">
                         <div class="card-body">

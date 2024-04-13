@@ -1,0 +1,21 @@
+﻿#ContenedorPedidos {
+    background-color: white;
+}
+
+
+.TituloMisPedidos{
+    padding:10px;
+    text-align:center;
+}
+
+.cuerpoPedidos {
+    padding: 10px;
+}
+
+.NumeroPedido{
+    font-weight:700;
+}
+
+.Aclaracion{
+    text-align:center;
+}

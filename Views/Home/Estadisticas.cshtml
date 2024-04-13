@@ -6,15 +6,67 @@
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <link href="~/css/bootstrap.css" rel="stylesheet" />
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="~/css/Estadisticas/Estadisticas.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.min.css">
 </head>
 <body>
+    <div class="contenedorCharts">
+        <div class="row sparkboxes mt-4">
+            <p class="encabezado">Este mes:</p>
+            <div class="col-md-3">
+                <div class="box box1">
+                    <div class="details">
+                        <h3>1213</h3>
+                        <h4>VISITAS</h4>
+                    </div>
+                    <div id="spark1"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box box2">
+                    <div class="details">
+                        <h3>$422,517</h3>
+                        <h4>VENTAS</h4>
+                    </div>
+                    <div id="spark2"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box box3">
+                    <div class="details">
+                        <h3>$301,155</h3>
+                        <h4>COSTOS</h4>
+                    </div>
+                    <div id="spark3"></div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="box box4">
+                    <div class="details">
+                        <h3>$121,362</h3>
+                        <h4>GANANCIAS </h4>
+                    </div>
+                    <div id="spark4"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div class="box shadow mt-4">
+                <div id="line-adwords" class=""></div>
+            </div>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js"></script>
     <script src="~/js/jquery-3.7.1.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
-    <script src="~/js/Estadisticas.js"></script>
+    <script src="~/js/Estadisticas/Estadisticas.js"></script>
+    <script src="~/js/Estadisticas/data.js"></script>
+    <script src="~/js/Estadisticas/charts.js"></script>
+
+
 </body>
 </html>
 

@@ -25,7 +25,7 @@
 
         localStorage.setItem('numeropedido', JSON.stringify(arrayPedidos));
 
-        mostrarNotificacionPersonalizada();
+        mostrarNotificacionPersonalizada(Pedidos.NumeroPedido);
         arrayCarrito = [];
         subTotal = 0;
         Envío = 0;

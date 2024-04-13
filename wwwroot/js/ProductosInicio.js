@@ -291,7 +291,7 @@ metodoPago.on("change", actualizarResumen);
 numeroTarjeta.on("input", actualizarResumen);
 correoPaypal.on("input", actualizarResumen);
 
-function mostrarNotificacionPersonalizada() {
+function mostrarNotificacionPersonalizada(Pedido) {
     const Toast = Swal.mixin({
         toast: true,
         position: 'center',
@@ -309,6 +309,7 @@ function mostrarNotificacionPersonalizada() {
             '<div class="imagenToast"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" width="48" height="48"><g stroke="#34D399" stroke-linejoin="round" stroke-linecap="round" stroke-width="2"><path d="M20 7L9.00004 18L3.99994 13"></path></g></svg></div>' +
             '<div class="contenidoToast">' +
             '<p class="tituloToast">Orden realizada correctamente</p>' +
+            '<p>No. de pedido: #' + Pedido +
             '<p>Puedes recoger el pedido hoy antes de las 7 pm o será entregado mañana.</p>' +
             '<a href="./Pedidos" class="btn btnPedidos" id="VerMisPedidos">Ver mis pedidos</a>' +
             '<button class="btn btnTracker" id="trackearEnvioBtn">Trackear mi envío</button>' +

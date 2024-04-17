@@ -1,0 +1,52 @@
+﻿#DetallePedido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardDetallePedido {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+img {
+    width: 50%;
+}
+
+body {
+    background-color: #EEF3F5;
+}
+
+.cardDetallePedido img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+    margin: 1px;
+}
+
+.card-body {
+    font-size: 12px;
+    align-content: center;
+    text-align: center;
+    margin: 0;
+    justify-content: end;
+}
+
+.card-header {
+    background-color: white;
+    border: none;
+    justify-content: end;
+    align-content: center;
+    margin: 0;
+    padding: 10px 5px 5px 5px;
+}
+
+.card-footer {
+    background-color: white;
+    font-weight:700;
+    border: none;
+    margin: 0;
+    padding: 5px;
+}

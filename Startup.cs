@@ -50,7 +50,7 @@ namespace GranD_eShop
             {
                 endpoints.MapControllerRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Productos}/{id?}");
+                    pattern: "{controller=Inicio}/{action=Productos}/{id?}");
             });
         }
     }

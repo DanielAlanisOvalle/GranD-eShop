@@ -14,6 +14,8 @@ const modalComprarAhora = $('#modalComprarAhora');
 const btnComprar = $('#btnComprar');
 let inputDireccion = $("#inputDireccion");
 let inputColonia = $("#inputColonia");
+let resumenNombre = $("#resumenNombre");
+let inputNombre = $("#inputNombre");
 let inputCiudad = $("#inputCiudad");
 let inputCodigoPostal = $("#inputCodigoPostal");
 let metodoPago = $("#metodoPago");
@@ -311,7 +313,7 @@ function mostrarNotificacionPersonalizada(Pedido) {
             '<p class="tituloToast">Orden realizada correctamente</p>' +
             '<p>No. de pedido: #' + Pedido +
             '<p>Puedes recoger el pedido hoy antes de las 7 pm o será entregado mañana.</p>' +
-            '<a href="./Pedidos" class="btn btnPedidos" id="VerMisPedidos">Ver mis pedidos</a>' +
+            '<a href="../Pedidos/Pedidos" class="btn btnPedidos" id="VerMisPedidos">Ver mis pedidos</a>' +
             '<button class="btn btnTracker" id="trackearEnvioBtn">Trackear mi envío</button>' +
             '</div>'
     });

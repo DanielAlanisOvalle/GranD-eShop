@@ -7,14 +7,14 @@
     <link href="~/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.min.css">
-    <link href="~/css/Carrito.css" rel="stylesheet" />
+    <link href="~/css/Carrito/Carrito.css" rel="stylesheet" />
     <style>
     </style>
 </head>
 <body>
     <div class="contenedorCarrito">
         <div class="row">
-            <div class="col-8">
+            <div class="col-12 col-sm-12 col-md-8">
                 <div id="accordion">
                     <div class="card">
                         <div class="card-header" id="headingCarrito">
@@ -32,11 +32,13 @@
                     <div class="card">
                         <div class="card-header" id="headingDireccion">
                             <button class="btn collapsed" data-toggle="collapse" data-target="#collapseDireccion" aria-expanded="false" aria-controls="collapseDireccion">
-                                Dirección
+                                Dirección / Entrega
                             </button>
                         </div>
                         <div id="collapseDireccion" class="collapse" aria-labelledby="headingDireccion" data-parent="#accordion">
                             <div class="card-body">
+                                <label for="inputNombre">Nombre:</label>
+                                <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese su nombre completo">
                                 <label for="inputDireccion">Dirección:</label>
                                 <input type="text" class="form-control" id="inputDireccion" placeholder="Ingrese su dirección">
                                 <label for="inputColonia">Colonia:</label>
@@ -81,7 +83,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-4 cardResumenCarrito">
+            <div class="col-12 col-sm-12 col-md-4 cardResumenCarrito">
                 <div class="card">
                     <div class="card-header" id="headingInformacion">
                         <h5>
@@ -90,9 +92,10 @@
                     </div>
                     <div class="card-body">
                         <h5>Información de entrega:</h5>
+                        <p class="info">Nombre: <span id="resumenNombre"></span></p>
                         <p class="info">Dirección: <span id="resumenDireccion"></span></p>
                         <p class="info">Colonia: <span id="resumenColonia"></span></p>
-                        <p class="info">Ciudad:<span id="resumenCiudad"></span></p>
+                        <p class="info">Ciudad: <span id="resumenCiudad"></span></p>
                         <p class="info">Código Postal: <span id="resumenCodigoPostal"></span></p>
                         <hr>
                         <h5>Información de pago:</h5>
@@ -115,7 +118,7 @@
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js"></script>
     <script src="~/js/jquery-3.7.1.js"></script>
     <script src="~/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="~/js/Carrito.js"></script>
-    <script type="text/javascript" src="~/js/ProductosInicio.js"></script>
+    <script type="text/javascript" src="~/js/Carrito/Carrito.js"></script>
+    <script type="text/javascript" src="~/js/Inicio/ProductosInicio.js"></script>
 </body>
 </html>

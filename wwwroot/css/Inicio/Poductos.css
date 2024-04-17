@@ -17,8 +17,8 @@
     margin-left: -10px;
     margin-right: -10px;
     margin-bottom: 2px;
-    box-shadow: 0 0 2px black;
-}
+/*    box-shadow: 0 0 2px black;
+*/}
 
 #contenedorProductos {
     display: flex;
@@ -53,7 +53,7 @@
 
 .product-title {
     margin-top: 3px;
-    font-size: 18px;
+    font-size: 16px;
     text-align: left;
 }
 
@@ -150,7 +150,7 @@
 }
 
 #lblDescripcion {
-    font-size:15px;
+    font-size: 15px;
     margin-top: 10px;
     text-align: justify;
 }
@@ -242,7 +242,7 @@ p {
 #nextBtn {
     right: 0;
 }
- 
+
 .contenedorProductos img {
     width: 100%;
     height: auto;
@@ -288,7 +288,7 @@ img:hover {
 
 .SpanGratis {
     color: green;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     animation: cambiarColor 2s infinite alternate;
 }
@@ -333,7 +333,7 @@ img:hover {
 
 .pComprar {
     font-size: 23px;
-    padding:5px 5px 0 5px;
+    padding: 5px 5px 0 5px;
     font-weight: 700;
 }
 
@@ -415,8 +415,8 @@ img:hover {
         height: 2rem;
     }
 
-.DivBtnCerrarToast{
-    text-align:end;
+.DivBtnCerrarToast {
+    text-align: end;
 }
 
 .dismiss {

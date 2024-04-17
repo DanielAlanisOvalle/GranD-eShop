@@ -19,29 +19,7 @@ namespace GranD_eShop.Controllers
         {
             _logger = logger;
         }
-
-        public IActionResult Login()
-        {
-            return View();
-        }
-        public IActionResult Carrito()
-        {
-            return View();
-        }
-
-        public IActionResult Productos()
-        {
-            return View();
-        }
         public IActionResult Ubicacion()
-        {
-            return View();
-        }
-        public IActionResult Pedidos()
-        {
-            return View();
-        }
-        public IActionResult DetallePedido()
         {
             return View();
         }

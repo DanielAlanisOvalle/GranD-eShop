@@ -33,7 +33,7 @@ function procesarData() {
 
 function crearElemento(element) {
     let nuevoElemento = document.createElement("div");
-    nuevoElemento.className = "card pull-up product-card col-sm-6 col-md-2 position-relative";
+    nuevoElemento.className = "card shadow pull-up col-sm-6 col-md-2 position-relative";
     nuevoElemento.innerHTML = '<div class="product-img">' +
         '<img style="width:40%" onclick="mostrarModalProducto(' + element.id + ')" src="' + element.image + '" alt="' + element.title + '">' +
         '</div>' +
@@ -49,7 +49,6 @@ function crearElemento(element) {
         '</div>';
     return nuevoElemento;
 }
-
 
 function mostrarError(msg) {
     console.log(msg);

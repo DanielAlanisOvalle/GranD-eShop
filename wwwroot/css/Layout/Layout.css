@@ -5,8 +5,8 @@
 }
 
 #Nav2 {
-    height: 35px;
-    font-size: 12px;
+    /*    height: 35px;
+*/ font-size: 12px;
     background-color: #b61111;
 }
 
@@ -21,6 +21,12 @@
         border-radius: 5px;
     }
 
+        #Nav2 .btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+
 body {
     padding: -20px;
     background-color: #EEF3F5;
@@ -28,16 +34,13 @@ body {
 
 .navbar-nav .nav-item .btn {
     background-color: #E8001A;
-    font-size: 17px;
+    font-size: 18px;
     color: white;
     margin-right: 5px;
 }
 
 body {
-    background: #121212;
-    background: linear-gradient( 135deg, #121212 25%, #1a1a1a 25%, #1a1a1a 50%, #121212 50%, #121212 75%, #1a1a1a 75%, #1a1a1a );
-    background-size: 40px 40px;
-    animation: move 4s linear infinite;
+    background-color: ghostwhite;
 }
 
 @keyframes move {
@@ -55,21 +58,31 @@ body {
 }
 
 .brandLogo {
-    margin:10px;
+    padding: 0;
     width: 13%;
+}
+
+@media(max-width:720px){
+    .brandLogo{
+        width:40%;
+    }
 }
 
 .navbar {
     display: flex;
-    height: 60px;
-    border-top:1px solid;
-    border-color:white;
+    border-top: 1px solid;
+    border-color: white;
     justify-content: space-between;
     align-items: center;
 }
 
 .navbar-brand {
     margin-right: auto;
+}
+
+nav.navbar.navbar-expand-lg.rojo {
+    padding: 0;
+    margin: 0;
 }
 
 .btn i {

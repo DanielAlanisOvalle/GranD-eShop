@@ -9,21 +9,37 @@
     var Envío = 0;
     const btnRealizarPedido = $('#btnRealizarPedido');
     var arrayPedidos = [];
+    var arrayImagenes = [];
 
     btnRealizarPedido.click(function () {
         var Pedidos = {};
 
         momentoActual = new Date();
-        day = momentoActual.getDay();
+        day = momentoActual.getDate();
         month = momentoActual.getMonth();
         year = momentoActual.getFullYear();
         hora = momentoActual.getHours();
         minuto = momentoActual.getMinutes();
         segundo = momentoActual.getSeconds();
+        mesQueViene = momentoActual.getMonth() + 1;
+        Pedidos.Total = Total;
+        Pedidos.Nombre = resumenNombre.text();
+        Pedidos.Fecha = day + "/" + month + "/" + year;
         Pedidos.NumeroPedido = year + "" + month + "" + day + "" + hora + "" + minuto + "" + segundo;
+        Pedidos.VentanaDevolucion = day + "/" + mesQueViene + "/" + year;
+        Pedidos.subTotal = subTotal;
+        Pedidos.Envío = Envío;
+        Pedidos.metodoPago = metodoPago;
         arrayPedidos.push(Pedidos);
-
+        arrayPedidos.push(Pedidos);
+        arrayPedidos.push(Pedidos);
         localStorage.setItem('numeropedido', JSON.stringify(arrayPedidos));
+
+        arrayCarrito.forEach(function (producto, index) {
+            arrayImagenes.push(producto.Imagen);
+        });
+
+        localStorage.setItem('imagenesPedido', JSON.stringify(arrayImagenes));
 
         mostrarNotificacionPersonalizada(Pedidos.NumeroPedido);
         arrayCarrito = [];
@@ -33,6 +49,7 @@
         //localStorage.removeItem('carrito');
         actualizarCarrito();
     });
+
 
     function actualizarCarrito() {
         var carritoHTML = '';
@@ -129,10 +146,12 @@
         var colonia = document.getElementById("inputColonia").value;
         var ciudad = document.getElementById("inputCiudad").value;
         var codigoPostal = document.getElementById("inputCodigoPostal").value;
+        var nombre = document.getElementById("inputNombre").value;
         resumenDireccion.text(direccion);
         resumenColonia.text(colonia);
         resumenCiudad.text(ciudad);
         resumenCodigoPostal.text(codigoPostal);
+        resumenNombre.text(nombre);
 
         let metodoPagoCarrito = $("#metodoPagoCarrito").val();
         let numeroTarjeta = $("#numeroTarjeta").val();
@@ -145,6 +164,7 @@
 
     inputDireccion.on("input", actualizarResumen);
     inputColonia.on("input", actualizarResumen);
+    inputNombre.on("input", actualizarResumen);
     inputCiudad.on("input", actualizarResumen);
     inputCodigoPostal.on("input", actualizarResumen);
     metodoPago.on("change", actualizarResumen);

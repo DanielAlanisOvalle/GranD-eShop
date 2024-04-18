@@ -212,20 +212,16 @@ function setRating(cantidad) {
     });
 }
 
-function setRatingInicio(cantidad, cardId) {
-    const starsContainer = document.getElementById(cardId).querySelector('.ratingInicio');
-    if (starsContainer) {
-        const stars = starsContainer.querySelectorAll('span');
-        stars.forEach((star, index) => {
-            if (index < cantidad) {
-                star.style.color = 'red';
-            } else {
-                star.style.color = 'grey';
-            }
-        });
-    } else {
-        console.error(`No se encontró el contenedor de estrellas para el card con ID ${cardId}`);
-    }
+function setRatingInicio(cantidad) {
+    const stars = document.querySelectorAll('.rating > span');
+    stars.forEach((star, index) => {
+        const invertedIndex = stars.length - 1 - index;
+        if (invertedIndex < cantidad) {
+            star.style.color = 'red';
+        } else {
+            star.style.color = 'grey';
+        }
+    });
 }
 
 // ********************* CARRUSEL DE IMAGENES ******************

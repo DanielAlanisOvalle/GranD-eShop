@@ -212,6 +212,22 @@ function setRating(cantidad) {
     });
 }
 
+function setRatingInicio(cantidad, cardId) {
+    const starsContainer = document.getElementById(cardId).querySelector('.ratingInicio');
+    if (starsContainer) {
+        const stars = starsContainer.querySelectorAll('span');
+        stars.forEach((star, index) => {
+            if (index < cantidad) {
+                star.style.color = 'red';
+            } else {
+                star.style.color = 'grey';
+            }
+        });
+    } else {
+        console.error(`No se encontró el contenedor de estrellas para el card con ID ${cardId}`);
+    }
+}
+
 // ********************* CARRUSEL DE IMAGENES ******************
 const carousel = document.getElementById('carousel');
 const slides = document.querySelectorAll('.slide');

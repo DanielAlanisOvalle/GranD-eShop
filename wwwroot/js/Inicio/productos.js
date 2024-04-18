@@ -30,23 +30,43 @@ function procesarData() {
         mostrarError("Ocurrió un error");
     }
 }
-
 function crearElemento(element) {
     let nuevoElemento = document.createElement("div");
     nuevoElemento.className = "card shadow pull-up col-sm-6 col-md-2 position-relative";
-    nuevoElemento.innerHTML = '<div class="product-img">' +
-        '<img style="width:40%" onclick="mostrarModalProducto(' + element.id + ')" src="' + element.image + '" alt="' + element.title + '">' +
-        '</div>' +
-        ((element.id % 2 === 0) ? '<p class="Promoción"><span class="SpanPromo">Promoción</span></p>' : '') +
-        '<div class="product-desc">' +
-        '<h2 class="product-title">' + element.title + '</h2>' +
-        '<span class="product-price">$' + element.price + '</span>' +
-        '<br/>' +
-        ((element.id % 2 === 0) ? '<span class="SpanGratis" style="font-size:15px"> Envío GRATIS en pedidos elegibles </span>' : '') +
-        '<div class="row">' +
-        '<button style="margin-top:5px;" id=' + element.id + ' onclick="mostrarModalProducto(' + element.id + ')" class="btn btn-warning btnVer position-absolute bottom-0 start-50 translate-middle-x mt-2">Ver <i class="bi bi-search"></i></button>' +
-        '</div>' +
-        '</div>';
+    nuevoElemento.id = element.id;
+    nuevoElemento.innerHTML = `
+        <div class="product-img">
+            <img style="width:40%" onclick="mostrarModalProducto(${element.id})" src="${element.image}" alt="${element.title}">
+        </div>
+        ${element.id % 2 === 0 ? '<p class="Promoción"><span class="SpanPromo">Promoción</span></p>' : ''}
+        <div class="product-desc">
+            <h2 class="product-title">${element.title}</h2>
+            <div class="row">
+                <div class="col-6">
+                    <p class="ratingP">Rating</p>
+                    <p class="ratingP">${element.rating.rate} (${element.rating.count})</p>
+                    <p class="rating">
+                        <div class="ratingInicio">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+                    </p>
+                </div>
+                <div class="col-6">
+                    <span class="product-price">$${element.price}</span>
+                </div>
+            </div>
+            ${element.id % 2 === 0 ? '<span class="SpanGratis" style="font-size:15px"> Envío GRATIS en pedidos elegibles </span>' : ''}
+            <div class="row">
+                <button style="margin-top:5px;"  onclick="mostrarModalProducto(${element.id})" class="btn btn-warning btnVer position-absolute bottom-0 start-50 translate-middle-x mt-2">Ver <i class="bi bi-search"></i></button>
+            </div>
+        </div>`;
+
+       setRatingInicio(element.rating.rate, element.id);
+
     return nuevoElemento;
 }
 

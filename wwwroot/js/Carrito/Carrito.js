@@ -50,7 +50,6 @@
         actualizarCarrito();
     });
 
-
     function actualizarCarrito() {
         var carritoHTML = '';
 

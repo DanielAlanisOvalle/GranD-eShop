@@ -172,6 +172,7 @@ function limpiarInputs() {
 }
 
 btnAgregarAlCarrito.click(function (e) {
+    incrementarContador();
     ProductoActual = {};
 
     ProductoActual.ID = Articulo.id;
@@ -332,4 +333,17 @@ function mostrarNotificacionPersonalizada(Pedido) {
     document.getElementById('VerMisPedidos').addEventListener('click', function () {
         console.log(localStorage);
     });
+}
+
+// CONTADOR DEL CARRITO
+let contador = 0;
+
+function incrementarContador() {
+    contador++;
+    actualizarContador();
+}
+
+function actualizarContador() {
+    const contadorElemento = document.getElementById("contador");
+    contadorElemento.textContent = contador;
 }

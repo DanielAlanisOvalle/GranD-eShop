@@ -50,3 +50,11 @@ body {
     margin: 0;
     padding: 5px;
 }
+
+
+.CardInformacion {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+}

@@ -30,6 +30,8 @@
         Pedidos.subTotal = subTotal;
         Pedidos.Envío = Envío;
         Pedidos.metodoPago = metodoPago;
+        Pedidos.colonia = colonia;
+        Pedidos.ciudad = ciudad;
         arrayPedidos.push(Pedidos);
         arrayPedidos.push(Pedidos);
         arrayPedidos.push(Pedidos);

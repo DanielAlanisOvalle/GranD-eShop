@@ -1,6 +1,17 @@
 ﻿var DetallePedido = document.getElementById('DetallePedido');
 var arrayCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
 var DetallePedidosHTML = '';
+var resumenNombre = $('#resumenNombre');
+var resumenDireccion = $('#resumenDireccion');
+var resumenColonia = $('#resumenColonia');
+var resumenCiudad = $('#resumenCiudad');
+var resumenCodigoPostal = $('#resumenCodigoPostal');
+var resumenMetodoPago = $('#resumenMetodoPago');
+var resumenNumeroTarjeta = $('#resumenNumeroTarjeta');
+var resumenCorreoPaypal = $('#resumenCorreoPaypal');
+var subTotalAPagar = $('#subTotalAPagar');
+var CostoEnvio = $('#CostoEnvio');
+var totalAPagar = $('#totalAPagar');
 
 $(document).ready(function () {
     DetallePedidos();
@@ -9,7 +20,7 @@ $(document).ready(function () {
 function DetallePedidos() {
     let DetallePedidosHTML = '';
 
-    arrayCarrito.forEach(function (producto, index) {
+    arrayCarrito.forEach(function (producto) {
         DetallePedidosHTML += `
         <div class="col-md-2 col-sm-4 card shadow cardDetallePedido">
            <div class="card-header">

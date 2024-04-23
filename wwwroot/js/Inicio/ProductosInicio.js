@@ -336,7 +336,7 @@ function mostrarNotificacionPersonalizada(Pedido) {
 }
 
 // CONTADOR DEL CARRITO
-let contador = 0;
+let contador;
 
 function incrementarContador() {
     contador++;

@@ -45,7 +45,7 @@ body {
 
 .card-footer {
     background-color: white;
-    font-weight:700;
+    font-weight: 700;
     border: none;
     margin: 0;
     padding: 5px;
@@ -56,5 +56,39 @@ body {
     justify-content: center;
     align-content: center;
     align-items: center;
-    padding:0 20px 20px 0;
+    padding: 0 20px 20px 0;
+}
+
+.cardResumenPedido {
+    font-size: 17px;
+}
+
+    .cardResumenPedido p {
+        margin: 2px;
+        padding: 0;
+        text-align:start;
+    }
+
+    p > label, span{
+        font-weight:700;
+    }
+
+    h5{
+        justify-content:center;
+        align-content:center;
+        text-align:center;
+        font-weight:500;
+        font-size:20px;
+    }
+
+#headingInformacion{
+    margin:0;
+    padding:15px 0 0 0;
+}
+
+#headingInformacion h5 {
+    font-size:25px;
+    font-weight:700;
+    margin: 0;
+    padding: 0;
 }

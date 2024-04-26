@@ -55,7 +55,7 @@ function crearElemento(element) {
                         </div>
                     </p>
                 </div>
-                <div class="col-6">
+                <div class="col-6 divPrecio">
                     <span class="product-price">$${element.price}</span>
                 </div>
             </div>

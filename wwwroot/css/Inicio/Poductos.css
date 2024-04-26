@@ -462,3 +462,8 @@ img:hover {
         border: 2px solid #ee0d0d;
         color: #fff;
     }
+
+.divPrecio{
+    justify-content:center;
+    align-content:center;
+}

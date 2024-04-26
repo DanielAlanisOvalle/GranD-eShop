@@ -29,9 +29,12 @@
         Pedidos.VentanaDevolucion = day + "/" + mesQueViene + "/" + year;
         Pedidos.subTotal = subTotal;
         Pedidos.Envío = Envío;
-        Pedidos.metodoPago = metodoPago;
-        Pedidos.colonia = colonia;
-        Pedidos.ciudad = ciudad;
+        Pedidos.metodoPago = document.getElementById("resumenMetodoPago").textContent;
+        Pedidos.Tarjeta = numeroTarjeta.val();
+        Pedidos.Paypal = correoPaypal.val();
+        Pedidos.colonia = inputColonia.val();
+        Pedidos.ciudad = inputCiudad.val();
+        Pedidos.codigoPostal = inputCodigoPostal.val();
         arrayPedidos.push(Pedidos);
         arrayPedidos.push(Pedidos);
         arrayPedidos.push(Pedidos);

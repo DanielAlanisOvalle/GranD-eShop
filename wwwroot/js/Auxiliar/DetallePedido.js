@@ -1,17 +1,29 @@
 ﻿var DetallePedido = document.getElementById('DetallePedido');
 var arrayCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
+var arrayPedido = JSON.parse(localStorage.getItem('numeropedido')) || [];
 var DetallePedidosHTML = '';
-var resumenNombre = $('#resumenNombre');
-var resumenDireccion = $('#resumenDireccion');
-var resumenColonia = $('#resumenColonia');
-var resumenCiudad = $('#resumenCiudad');
-var resumenCodigoPostal = $('#resumenCodigoPostal');
-var resumenMetodoPago = $('#resumenMetodoPago');
-var resumenNumeroTarjeta = $('#resumenNumeroTarjeta');
-var resumenCorreoPaypal = $('#resumenCorreoPaypal');
-var subTotalAPagar = $('#subTotalAPagar');
-var CostoEnvio = $('#CostoEnvio');
-var totalAPagar = $('#totalAPagar');
+
+const detalleNombre = $('#detalleNombre');
+const detalleColonia = $('#detalleColonia');
+const detalleCiudad = $('#detalleCiudad');
+const detalleCodigoPostal = $('#detalleCodigoPostal');
+const detalleMetodoPago = $('#detalleMetodoPago');
+const detalleNumeroTarjeta = $('#detalleNumeroTarjeta');
+const detalleCorreoPaypal = $('#detalleCorreoPaypal');
+const subTotalAPagar = $('#subTotalAPagar');
+const CostoEnvio = $('#CostoEnvio');
+const totalAPagar = $('#totalAPagar');
+
+detalleNombre.text(arrayPedido[0].Nombre);
+detalleColonia.text(arrayPedido[0].colonia);
+detalleCiudad.text(arrayPedido[0].ciudad);
+detalleCodigoPostal.text(arrayPedido[0].codigoPostal);
+detalleMetodoPago.text(arrayPedido[0].metodoPago);
+detalleNumeroTarjeta.text(arrayPedido[0].Tarjeta);
+detalleCorreoPaypal.text(arrayPedido[0].Paypal);
+subTotalAPagar.text(arrayPedido[0].subTotal);
+CostoEnvio.text(arrayPedido[0].Envío);
+totalAPagar.text(arrayPedido[0].Total);
 
 $(document).ready(function () {
     DetallePedidos();

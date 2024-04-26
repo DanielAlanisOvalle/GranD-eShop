@@ -90,6 +90,10 @@ nav.navbar.navbar-expand-lg.rojo {
     color: white;
 }
 
+#btnAgregarAlCarrito i{
+    color: black;
+}
+
 .navbar-nav .nav-item .btn i {
     font-size: 25px;
 }

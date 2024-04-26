@@ -36,10 +36,6 @@ div#headingInformacion {
     text-align: center;
 }
 
-.card-body {
-    padding: 5px;
-}
-
 .CardImgCarrito {
     margin-left: 10px;
     margin-right: -10px;
@@ -208,3 +204,7 @@ h5 {
         border: 2px solid #ee0d0d;
         color: #fff;
     }
+
+.cardBodyInfo{
+    padding:15px;
+}

@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', () => {
 function getData() {
     fetch('https://fakestoreapi.com/products')
         .catch(error => mostrarError(error.message))
-        .then(r => r.json())
-        .then(data => {
-            return data.map(pr => new Producto(pr));
+        .then(items => items.json())
+        .then(items => {
+            return items.map(pr => new Producto(pr));
         })
         .then(items => {
             productos = items;

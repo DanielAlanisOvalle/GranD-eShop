@@ -7,6 +7,15 @@
 
   <ItemGroup>
     <PackageReference Include="Dapper" Version="2.1.44" />
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Entity\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Entity\Entity.csproj" />
   </ItemGroup>
 
 </Project>

@@ -6,36 +6,47 @@ using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using Entity;
 using System.Threading.Tasks;
 
 namespace GranD_eShop.Controllers
 {
     public class PedidosController : Controller
     {
-        private readonly ILogger<PedidosController> _logger;
-
-        public PedidosController(ILogger<PedidosController> logger)
+        private readonly GranDeShopEntities contexto;
+        public PedidosController()
         {
-            _logger = logger;
+            contexto = new GranDeShopEntities();
+        }
+        [HttpPost]
+        public List<EncabezadoPedidos> ObtenerPedidos([FromBody] string Usuario)
+        {
+            List<EncabezadoPedidos> Pedidos = contexto.EncabezadoPedidos.Where(x => x.UsuarioPedido == Usuario).ToList();
+            return Pedidos;
+        }
+
+        [HttpPost]
+        public List<DetallePedidos> ObtenerImagenesPedido([FromBody] string Pedido)
+        {
+            List<DetallePedidos> Pedidos = contexto.DetallePedidos.Where(x => x.NumeroPedido == Pedido).ToList();
+            return Pedidos;
+        }
+
+        [HttpPost]
+        public List<ObtenerDatosPedido_Result> DetallePedido([FromBody] string PedidoSeleccionado)
+        {
+            List<ObtenerDatosPedido_Result> Result = contexto.ObtenerDatosPedido(PedidoSeleccionado).ToList();
+            return Result;
         }
         public IActionResult Pedidos()
         {
             return View();
         }
+
         public IActionResult DetallePedido()
         {
             return View();
         }
-        [HttpPost]
-        public void ObtieneNumeroPedido([FromBody] PedidosModels.Pedidos pedidos)
-        {
-            string resultado = pedidos.NumeroPedido;
-        }
 
-        [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
-        public IActionResult Error()
-        {
-            return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
     }
 }

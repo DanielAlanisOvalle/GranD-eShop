@@ -1,5 +1,4 @@
 ﻿document.addEventListener('DOMContentLoaded', () => {
-    //    localStorage.removeItem('carrito');
 });
 
 const modalProductos = $('#modalProductos');
@@ -40,6 +39,7 @@ const imgComprarAhora = $('#imgComprarAhora');
 const lblTitleComprarAhora = $('#lblTitleComprarAhora');
 const lblDescripcionComprarAhora = $('#lblDescripcionComprarAhora');
 const btnConfirmarComprarAhora = $('#btnConfirmarComprarAhora');
+var UsuarioSesionActual = localStorage.getItem('Usuario');
 
 let ProductoActual = {
     Nombre: '',
@@ -172,7 +172,6 @@ function limpiarInputs() {
 }
 
 btnAgregarAlCarrito.click(function (e) {
-    incrementarContador();
     ProductoActual = {};
 
     ProductoActual.ID = Articulo.id;
@@ -181,7 +180,8 @@ btnAgregarAlCarrito.click(function (e) {
     ProductoActual.Precio = Articulo.price;
     ProductoActual.Imagen = Articulo.image;
     ProductoActual.Rating = Articulo.rating;
-    ProductoActual.Cantidad = quantityInput.val();
+    ProductoActual.Cantidad = parseInt(quantityInput.val());
+    ProductoActual.Total = parseInt(quantityInput.val()) * Articulo.price;
     ProductoActual.Talla = Talla;
 
     arrayCarrito.push(ProductoActual);
@@ -333,17 +333,4 @@ function mostrarNotificacionPersonalizada(Pedido) {
     document.getElementById('VerMisPedidos').addEventListener('click', function () {
         console.log(localStorage);
     });
-}
-
-// CONTADOR DEL CARRITO
-let contador;
-
-function incrementarContador() {
-    contador++;
-    actualizarContador();
-}
-
-function actualizarContador() {
-    const contadorElemento = document.getElementById("contador");
-    contadorElemento.textContent = contador;
 }

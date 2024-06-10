@@ -10,9 +10,13 @@
     const btnRealizarPedido = $('#btnRealizarPedido');
     var arrayPedidos = [];
     var arrayImagenes = [];
+    var UsuarioSesionActual = localStorage.getItem('Usuario');
+    var Pedidos = new Object();
+    var inputCodigoPostal = $('#inputCodigoPostal');
+    var arrayDetallePedido = [];
+    var ObjDetalle = new Object();
 
     btnRealizarPedido.click(function () {
-        var Pedidos = {};
 
         momentoActual = new Date();
         day = momentoActual.getDate();
@@ -23,36 +27,49 @@
         segundo = momentoActual.getSeconds();
         mesQueViene = momentoActual.getMonth() + 1;
         Pedidos.Total = Total;
+        Pedidos.CostoTotalPedido = Total;
         Pedidos.Nombre = resumenNombre.text();
-        Pedidos.Fecha = day + "/" + month + "/" + year;
+        Pedidos.Fecha = year + "/" + month + "/" + day + "" + hora + ":" + minuto + ":" + segundo;
+        Pedidos.UsuarioPedido = UsuarioSesionActual;
         Pedidos.NumeroPedido = year + "" + month + "" + day + "" + hora + "" + minuto + "" + segundo;
         Pedidos.VentanaDevolucion = day + "/" + mesQueViene + "/" + year;
         Pedidos.subTotal = subTotal;
         Pedidos.Envío = Envío;
-        Pedidos.metodoPago = document.getElementById("resumenMetodoPago").textContent;
+        Pedidos.MetodoPago = document.getElementById("resumenMetodoPago").textContent;
         Pedidos.Tarjeta = numeroTarjeta.val();
         Pedidos.Paypal = correoPaypal.val();
         Pedidos.colonia = inputColonia.val();
         Pedidos.ciudad = inputCiudad.val();
-        Pedidos.codigoPostal = inputCodigoPostal.val();
-        arrayPedidos.push(Pedidos);
-        arrayPedidos.push(Pedidos);
-        arrayPedidos.push(Pedidos);
+        Pedidos.CodigoPostal = inputCodigoPostal.val();
         localStorage.setItem('numeropedido', JSON.stringify(arrayPedidos));
 
-        arrayCarrito.forEach(function (producto, index) {
+        arrayCarrito.forEach(function (producto) {
+            producto.NumeroPedido = Pedidos.NumeroPedido;
+            producto.Fecha = momentoActual;
+            producto.Usuario = UsuarioSesionActual;
             arrayImagenes.push(producto.Imagen);
+
+            ObjDetalle.NumeroPedido = producto.NumeroPedido;
+            ObjDetalle.Usuario = producto.Usuario;
+            ObjDetalle.Fecha = producto.Fecha;
+            ObjDetalle.Artículo = producto.ID;
+            ObjDetalle.Cantidad = producto.Cantidad;
+            ObjDetalle.CostoUnitario = producto.Precio;
+            ObjDetalle.CostoTotal = producto.Total;
+            ObjDetalle.Imagen = producto.Imagen;
+
+            CrearDetallePedido(ObjDetalle);
         });
 
-        localStorage.setItem('imagenesPedido', JSON.stringify(arrayImagenes));
-
+        CrearEncabezado(Pedidos);
         mostrarNotificacionPersonalizada(Pedidos.NumeroPedido);
+
         arrayCarrito = [];
         subTotal = 0;
         Envío = 0;
         Total = 0;
-        //localStorage.removeItem('carrito');
         actualizarCarrito();
+        localStorage.removeItem('carrito');
     });
 
     function actualizarCarrito() {
@@ -174,6 +191,33 @@
     metodoPago.on("change", actualizarResumen);
     numeroTarjeta.on("input", actualizarResumen);
     correoPaypal.on("input", actualizarResumen);
+
+    function CrearEncabezado(Pedidos) {
+        $.ajax({
+            url: "CrearEncabezado",
+            type: 'POST',
+            dataType: 'json',
+            data: Pedidos,
+            success: function (data, textStatus, xhr) {
+            },
+            error: function (xhr, textStatus, errorThrow) {
+            }
+        });
+    }
+
+    function CrearDetallePedido(Articulo) {
+        $.ajax({
+            url: "CrearDetalle",
+            type: 'POST',
+            dataType: 'json',
+            data: Articulo,
+            success: function (data, textStatus, xhr) {
+            },
+            error: function (xhr, textStatus, errorThrow) {
+            }
+        });
+    }
+
 });
 
 /* METODO DE PAGO */
@@ -191,3 +235,4 @@ function mostrarCamposPagoCarrito() {
         camposPaypalCarrito.css('display', 'block');
     }
 }
+

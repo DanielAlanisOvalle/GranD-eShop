@@ -1,0 +1,155 @@
+﻿.rojo {
+    background-color: #E8001A;
+    color: white;
+    font-size: 30px;
+}
+
+#Nav2 {
+    /*    height: 35px;
+*/ font-size: 12px;
+    background-color: #b61111;
+}
+
+    #Nav2 .btn {
+        font-size: 15px;
+        border-top: 0;
+        border-right: 0;
+        border-bottom: 0;
+        border-left: 1px solid;
+        background-color: #b61111;
+        border-color: white;
+        border-radius: 5px;
+    }
+
+        #Nav2 .btn:hover {
+            background-color: white;
+            color: black;
+        }
+
+
+body {
+    padding: -20px;
+    background-color: #EEF3F5;
+}
+
+.navbar-nav .nav-item .btn {
+    background-color: #E8001A;
+    font-size: 18px;
+    color: white;
+    margin-right: 5px;
+}
+
+body {
+    background-color: ghostwhite;
+}
+
+@keyframes move {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: 40px 40px;
+    }
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.brandLogo {
+    padding: 0;
+    width: 13%;
+}
+
+@media(max-width:720px) {
+    .brandLogo {
+        width: 40%;
+    }
+
+    #Nav2 {
+        display: none;
+    }
+}
+
+.navbar {
+    display: flex;
+    border-top: 1px solid;
+    border-color: white;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-right: auto;
+}
+
+nav.navbar.navbar-expand-lg.rojo {
+    padding: 0;
+    margin: 0;
+}
+
+.btn i {
+    font-size: 15px;
+    color: white;
+}
+
+#btnAgregarAlCarrito i {
+    color: black;
+}
+
+.navbar-nav .nav-item .btn i {
+    font-size: 25px;
+}
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.nav-item > .d-flex {
+    align-items: center;
+}
+
+.footer {
+    font-size: 14px;
+    background-color: #1f1f24;
+    padding: 12px 0;
+    color: rgba(255, 255, 255, 0.7);    
+}
+
+.d-flex {
+    display: flex !important;
+}
+
+.footer h4 {
+    font-size: 16px;
+    font-weight: bold;
+    position: relative;
+    padding-bottom: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.footer .icon {
+    margin-right: 15px;
+    font-size: 24px;
+    line-height: 0;
+}
+
+.footer .social-links {
+    justify-content: center;
+}
+
+    .footer .social-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        font-size: 16px;
+        color: rgba(255, 255, 255, 0.7);
+        margin-right: 10px;
+        transition: 0.3s;
+    }

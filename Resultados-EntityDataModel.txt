@@ -1,0 +1,30 @@
+﻿Archivo de modelo generado: Modelo.edmx.
+La carga de los metadatos desde la base de datos tardó 00:00:01.5715138.
+La generación del modelo tardó 00:00:08.0991013.
+El modelo se generó con advertencias o errores.Modelo.edmxVea la lista de errores para obtener más detalles. Se deben corregir estos problemas antes de ejecutar la aplicación.
+La carga de los metadatos desde la base de datos tardó 00:00:00.4040720.
+La generación del modelo tardó 00:00:02.1527550.
+Archivo de modelo generado: Modelo.edmx.
+La carga de los metadatos desde la base de datos tardó 00:00:00.3091964.
+La generación del modelo tardó 00:00:00.4027592.
+Archivo de modelo generado: Modelo.edmx.
+La carga de los metadatos desde la base de datos tardó 00:00:00.5124928.
+La generación del modelo tardó 00:00:02.4725384.
+Archivo de modelo generado: Modelo.edmx.
+La carga de los metadatos desde la base de datos tardó 00:00:00.3142100.
+La generación del modelo tardó 00:00:00.3668209.
+Archivo de modelo generado: Modelo.edmx.
+La carga de los metadatos desde la base de datos tardó 00:00:00.3020200.
+La generación del modelo tardó 00:00:00.3685839.
+Archivo de modelo generado: Modelo.edmx.
+La carga de los metadatos desde la base de datos tardó 00:00:00.3117295.
+La generación del modelo tardó 00:00:00.3607713.
+Archivo de modelo generado: Modelo.edmx.
+La carga de los metadatos desde la base de datos tardó 00:00:00.3002969.
+La generación del modelo tardó 00:00:00.3487785.
+Archivo de modelo generado: Modelo.edmx.
+La carga de los metadatos desde la base de datos tardó 00:00:00.3198577.
+La generación del modelo tardó 00:00:00.3412526.
+Archivo de modelo generado: Modelo.edmx.
+La carga de los metadatos desde la base de datos tardó 00:00:00.5278004.
+La generación del modelo tardó 00:00:02.3975444.

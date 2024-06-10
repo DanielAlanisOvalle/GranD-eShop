@@ -1,0 +1,60 @@
+﻿@{ Layout = "~/Views/Shared/_Layout.cshtml"; }
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos</title>
+    <link href="~/css/bootstrap.css" rel="stylesheet" />
+    <link href="~/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.min.css">
+    <link href="~/css/Pedidos/DetallePedidos.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="row">
+        <div class="col-md-2 col-sm-2 m-2">
+            <a class="btn btn-primary rounded-pill shadow" onclick="location.href='@Url.Action("Pedidos", "Pedidos")'">
+                <i class="bi bi-arrow-left-short"></i> Volver a mis pedidos
+            </a>
+        </div>
+    </div>
+
+    <div class="row contenedorDetalle">
+        <div class="col-12 col-sm-12 col-md-6">
+            <div class="card-body">
+                <div id="DetallePedido">
+                </div>
+            </div>
+        </div>
+        <div class="col-12 col-sm-12 col-md-6 CardInformacion">
+            <div class="card shadow">
+                <div class="card-header" id="headingInformacion">
+                    <h5>
+                        Este pedido
+                    </h5>
+                </div>
+                <div class="card-body cardResumenPedido">
+                    <h5>Información de entrega:</h5>
+                    <p class="info">Nombre: <label id="detalleNombre"></label></p>
+                    <p class="info">Colonia: <span id="detalleColonia"></span></p>
+                    <p class="info">Ciudad: <span id="detalleCiudad"></span></p>
+                    <p class="info">Código Postal: <span id="detalleCodigoPostal"></span></p>
+                    <p class="info">Fecha: <span id="detalleFechaPedido"></span></p>
+                    <hr>
+                    <h5>Información de pago:</h5>
+                    <p class="info">Método de Pago: <span id="detalleMetodoPago"></span></p>
+                    <hr>
+                    <p class="total">Envío: <label id="TotalEnvío">0</label></p>
+                    <p class="total">Total (IVA incluido, en caso de ser aplicable): <label id="totalAPagar"></label></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.7/dist/sweetalert2.all.min.js"></script>
+    <script src="~/js/jquery-3.7.1.js"></script>
+    <script src="~/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="~/js/Auxiliar/DetallePedido.js"></script>
+</body>
+</html>

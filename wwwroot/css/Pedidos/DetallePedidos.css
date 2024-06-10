@@ -1,0 +1,94 @@
+﻿#DetallePedido {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cardDetallePedido {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+}
+
+img {
+    width: 50%;
+}
+
+body {
+    background-color: #EEF3F5;
+}
+
+.cardDetallePedido img {
+    max-width: 100px;
+    max-height: 100px;
+    object-fit: contain;
+    margin: 1px;
+}
+
+.card-body {
+    font-size: 12px;
+    align-content: center;
+    text-align: center;
+    margin: 0;
+    justify-content: end;
+}
+
+.card-header {
+    background-color: white;
+    border: none;
+    justify-content: end;
+    align-content: center;
+    margin: 0;
+    padding: 10px 5px 5px 5px;
+}
+
+.card-footer {
+    background-color: white;
+    font-weight: 700;
+    border: none;
+    margin: 0;
+    padding: 5px;
+}
+
+
+.CardInformacion {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 0 20px 20px 0;
+}
+
+.cardResumenPedido {
+    font-size: 17px;
+}
+
+    .cardResumenPedido p {
+        margin: 2px;
+        padding: 0;
+        text-align:start;
+    }
+
+    p > label, span{
+        font-weight:700;
+    }
+
+    h5{
+        justify-content:center;
+        align-content:center;
+        text-align:center;
+        font-weight:500;
+        font-size:20px;
+    }
+
+#headingInformacion{
+    margin:0;
+    padding:15px 0 0 0;
+}
+
+#headingInformacion h5 {
+    font-size:25px;
+    font-weight:700;
+    margin: 0;
+    padding: 0;
+}
